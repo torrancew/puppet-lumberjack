@@ -28,8 +28,9 @@ class lumberjack::service {
 
   service {
     'lumberjack':
-      ensure => running,
-      enable => true,
+      ensure    => running,
+      enable    => true,
+      hasstatus => false;
   }
 }
 
