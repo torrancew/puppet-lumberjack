@@ -3,7 +3,7 @@
     "servers":         ["<%= @server %>:<%= @port %>"],
     "ssl ca":          "/var/lib/puppet/ssl/certs/ca.pem",
     "ssl key":         "/var/lib/puppet/ssl/private_keys/<%= @certname %>.pem",
-    "ssl certificate": "/var/lib/puppet/ssl/certs/<%= @certname %>.pem",
+    "ssl certificate": "/var/lib/puppet/ssl/certs/<%= @certname %>.pem"
   },
   "files": [
     {
@@ -20,7 +20,7 @@
     {
       "paths": [
         "/var/log/mail.log",
-        "/var/log/mail.err",
+        "/var/log/mail.err"
       ],
       "fields": { "type": "mail", "program": "postfix" }
     },
