@@ -2,8 +2,8 @@
   "network": {
     "servers":         ["<%= @server %>:<%= @port %>"],
     "ssl ca":          "/var/lib/puppet/ssl/certs/ca.pem",
-    "ssl key":         "/var/lib/puppet/ssl/private_keys/<%= @certname %>.pem",
-    "ssl certificate": "/var/lib/puppet/ssl/certs/<%= @certname %>.pem"
+    "ssl key":         "/var/lib/puppet/ssl/private_keys/<%= @fqdn %>.pem",
+    "ssl certificate": "/var/lib/puppet/ssl/certs/<%= @fqdn %>.pem"
   },
   "files": [
     {
