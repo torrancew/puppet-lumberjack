@@ -31,7 +31,11 @@
     {
       "paths": [ "/var/log/puppet/masterhttp.log" ],
       "fields": { "type": "puppet", "program": "puppet-master" }
-    }
+    },
+    {
+      "paths": [ "/var/log/puppetdb/puppetdb.log" ],
+      "fields": { "type": "puppetdb", "program": "puppetdb" }
+    },
   ]
 }
 
